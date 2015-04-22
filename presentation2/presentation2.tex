@@ -151,7 +151,7 @@ Solving the above relation requires further assumptions, for more simplicity the
 %==============================================================
 \begin{withoutheadline}
 
-\begin{frame} \frametitle{Reduced-order PDF equations: MZ approach}
+\begin{frame} \frametitle{Reduced-order PDF equations: Mori–Zwanzig (MZ) approach}
 We can write the pde of pdf inform of:
 \includegraphics[width=\textwidth]{10.png} \\
 by using the following transformation,\\
@@ -160,20 +160,94 @@ by using the following transformation,\\
  \includegraphics[width=.75\textwidth]{12.png}
 \end{frame}
 \end{withoutheadline}
-%==============================================================
-\section{Motivation}
+%============================================================
+
 \begin{withoutheadline}
 
-\begin{frame} \frametitle{Complex System Modeling and UQ}
+\begin{frame} \frametitle{MZ approach Cont.}
+\begin{itemize}
+\item $\mathcal{L}_0$ depends only on the phase variable $a$, representing the velocity field, but not on the
+phase variables $b$ associated with the random forcing term.
+
+\item PDF of $u(x, t; \omega)$
+can be, in principle, obtained by inverting equation  and then integrating it with respect to
+$b$.
+
+\item This operation can be conveniently represented in terms of an orthogonal projection operator.
+
+\item So we can define the following projection ($q(b)$ denotes the joint PDF of the random vector $\xi$ appearing in the forcing term):\\
+\includegraphics[width=.5\textwidth]{13.png}\\
+
+
+\end{itemize}
 
 \end{frame}
 \end{withoutheadline}
 %==============================================================
-\section{Motivation}
+
 \begin{withoutheadline}
 
-\begin{frame} \frametitle{Complex System Modeling and UQ}
+\begin{frame} \frametitle{MZ approach Cont.}
+\begin{itemize}
+\item With some simplification we can write:
+\includegraphics[width=.75\textwidth]{14.png}\\
+\item Or in projected space:\\
+\includegraphics[width=.5\textwidth]{15.png}\\
+\includegraphics[width=\textwidth]{16.png}\\
+\end{itemize}
+\end{frame}
+\end{withoutheadline}
+%==============================================================
+\begin{withoutheadline}
+\begin{frame} \frametitle{Kinetic equations for the two-point PDF}
+
+Almost same story can be repeated for joint distribution, but clearly more complicated:
+\includegraphics[width=\textwidth]{17.png}\\
+\includegraphics[width=\textwidth]{18.png}\\
+\includegraphics[width=\textwidth]{19.png}\\
 
 \end{frame}
 \end{withoutheadline}
+%==============================================================
+\section{Result}
+\begin{withoutheadline}
+\begin{frame} \frametitle{Simulation}
+\includegraphics[width=.3\textwidth]{20.png}\\
+%\includegraphics[width=\textwidth]{21.png}\\
+\includegraphics[width=.3\textwidth]{22.png}\\
+\includegraphics[width=\textwidth]{23.png}\\
+\center{\includegraphics[width=.4\textwidth]{24.png}}\\
+\end{frame}
+\end{withoutheadline}
+%==============================================================
+\begin{withoutheadline}
+\begin{frame} \frametitle{Effect of approximation}
+\includegraphics[width=.9\textwidth]{25.png}\\
+\end{frame}
+\end{withoutheadline}
+%%==============================================================
+%\begin{withoutheadline}
+%\begin{frame} \frametitle{Kinetic equations for the two-point PDF}
+%
+%\end{frame}
+%\end{withoutheadline}
+%%==============================================================
+%\begin{withoutheadline}
+%\begin{frame} \frametitle{Kinetic equations for the two-point PDF}
+%
+%\end{frame}
+%\end{withoutheadline}
+%%==============================================================
+%\begin{withoutheadline}
+%\begin{frame} \frametitle{Kinetic equations for the two-point PDF}
+%
+%\end{frame}
+%\end{withoutheadline}
+%%==============================================================
+%\begin{withoutheadline}
+%\begin{frame} \frametitle{Kinetic equations for the two-point PDF}
+%
+%\end{frame}
+%\end{withoutheadline}
+
 \end{document}
